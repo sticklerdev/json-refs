@@ -826,6 +826,7 @@ function resolveRefs (obj, options) {
         });
     })
     .then(function (results) {
+      var metadataClone = _.cloneDeep(results);
       var allRefs = {};
       var circularPaths = [];
       var circulars = [];
@@ -1054,6 +1055,8 @@ function resolveRefs (obj, options) {
       });
 
       return {
+        rootLocation: fullLocation,
+        deps: metadataClone.deps,
         refs: allRefs,
         resolved: results.docs[fullLocation]
       };
