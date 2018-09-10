@@ -74,7 +74,7 @@
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4",
     "native-promise-only": "^0.8.1",
-    "path-loader": "^1.0.5",
+    "path-loader": "sticklerdev/path-loader",
     "slash": "^1.0.0",
     "uri-js": "^3.0.2"
   }
